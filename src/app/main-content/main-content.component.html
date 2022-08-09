@@ -92,3 +92,66 @@
   <app-gallery (close)="showGallery = false" [imgs]="images" [currentImageIndex]="currentIndex" *ngIf="showGallery" ></app-gallery>
 
 </section>
+
+<section class="bg-neutral-800 text-white py-8">
+  <div>
+    <!-- <img src="https://maps.googleapis.com/maps/api/staticmap?center=4580 Jordan Rd, Greer, SC 29651
+        &markers=color:blue|size:mid|label:M|4580 Jordan Rd, Greer, SC 29651&scale=2&zoom=14&size=640x640&key=AIzaSyCzQVOZ-dwdT7rxbA97pXpWFGfJfXWUGxY" /> -->
+  </div>
+  <div class="lg:container sm:px-6 lg:px-96">
+    
+    <div class="grid grid-flow-col auto-cols-max">
+      <div class="mt-8 lg:w-[500px]">
+        <h2>Contacts</h2>
+        <div class="flex mb-4 text-lg">
+          <div class="mr-4">
+            <i class="fa-solid fa-location-dot text-primary"></i>
+          </div>
+          <p>4580 Jordan Road, Greer, SC 29651</p>
+        </div>
+        <div class="flex mb-4 text-lg">
+          <div class="mr-4">
+            <i class="fa-solid fa-phone text-primary"></i>
+          </div>
+          <a href="tel:+18643169871">(864) 316-9871</a>
+        </div>
+        <div class="flex mb-4 text-lg">
+          <div class="mr-4">
+            <i class="fa-solid fa-envelope text-primary"></i>
+          </div>
+          <a href="tel:+18643169871">email@email.com</a>
+        </div>
+      </div>
+
+      <div class="mt-8 lg:w-[650px]">
+        <h2>Send Us A Message</h2>
+        <form>
+          <div class="mb-6">
+            <label for="txtFullName" class="font-semibold">Full Name</label>
+            <input id="txtFullName" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+          </div>
+          <div class="mb-6">
+            <label for="txtEmail" class="font-semibold">E-mail</label>
+            <input id="txtEmail" type="text" class="bg-neutral-700 py-2 mt-2">
+          </div>
+          <div class="mb-6">
+            <label for="txtCompany" class="font-semibold">Company</label>
+            <input id="txtCompany" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+          </div>
+          <div class="mb-6">
+            <label for="txtSubject" class="font-semibold">Subject</label>
+            <input id="txtSubject" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+          </div>
+          <div class="mb-6">
+            <label for="txtMessage" class="font-semibold">Message</label>
+            <textarea id="txtMessage" type="text" class="bg-neutral-700 py-2 px-4 mt-2 w-full h-[150px]"></textarea>
+          </div>
+          <div class="mb-6 text-right">
+            <button class="primary-button large-button">SEND MESSAGE</button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</section>
