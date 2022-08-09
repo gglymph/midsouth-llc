@@ -78,14 +78,17 @@
 </section>
 
 <section>
-  <div class="grid grid-cols-3 gap-0">
-    <div class="gallery-img" *ngFor="let img of images" [ngStyle]="{'background-image': 'url('+ img.img +')'}">
-      <div class="gallery-overlay text-white">
-        <div class="content">
+  <div class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-0">
+    <div class="gallery-img" *ngFor="let img of images; index as i" [ngStyle]="{'background-image': 'url('+ img.img +')'}">
+      <div class="gallery-overlay text-white" (click)="openGallery(i)">
+        <div class="gallery-content pt-28">
           <i class="fa-solid fa-magnifying-glass-plus text-3xl"></i>
           <h4>{{img.header}}</h4>
         </div>
       </div>
     </div>
   </div>
+
+  <app-gallery (close)="showGallery = false" [imgs]="images" [currentImageIndex]="currentIndex" *ngIf="showGallery" ></app-gallery>
+
 </section>

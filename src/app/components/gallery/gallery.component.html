@@ -1,11 +1,16 @@
 <div class="gallery">
-  <div class="gallery-container">
+  <div class="gallery-container lg:w-[60vw] sm:w-[80vw]">
 
     <div class="text-right text-white">
-      <a href="javascript:void(0)" class="fa-solid fa-xmark"></a>
+      <a href="javascript:void(0)" class="fa-solid fa-xmark text-3xl" (click)="closeGallery()"></a>
     </div>
 
-    
-
+    <div class="image-container text-white">
+      <div class="flex gap-8">
+        <a href="javascript:void(0)" (click)="scrollLeft()" class="fa-solid self-center fa-angle-left lg:text-5xl sm:text-2xl"></a>
+        <img class="flex-1" [src]="imgs[currentImageIndex].img" />
+        <a href="javascript:void(0)" (click)="scrollRight()" class="fa-solid self-center fa-angle-right lg:text-5xl sm:text-2xl"></a>
+      </div>
+    </div>
   </div>
 </div>
