@@ -5,9 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:ital,wght@0,600;1,500;1,600&display=swap');
 
 body {
-    background-image: url('assets/images/shane-mclendon-EN1tF2EG-50-unsplash.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #333;
@@ -22,7 +19,8 @@ h1 {
     
 }
 h2 {
-    font-size: calc(1rem * 3);
+    font-size: calc(1rem * 2.8);
+    margin-bottom: 15px;
 }
 h3 {
     font-size: calc(1rem * 1.8);

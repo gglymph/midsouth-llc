@@ -1,12 +1,12 @@
 <section class="main-img">
-  <div class="img-overlay text-center pt-24 sm:px-2">
+  <div class="img-overlay text-center pt-24 sm:px-6">
     <h1 class="text-white">Some Header</h1>
     <h3 class="text-white">Face time do i have consent to record this meeting</h3>
     <button type="button" class="primary-button-open-white large-button mt-36">SEE OUR RECENT PROJECTS</button>
   </div>
 </section>
 
-<section class="bg-white py-16">
+<section class="bg-white pt-16">
   <div class="lg:container lg:mx-auto sm:px-6">
     <div class="lg:columns-2 sm:columns-1">
       <div class="flex-1 flex gap-8 mb-16">
@@ -15,7 +15,7 @@
         </div>
         <div class="flex-1">
           <h4>Subtitle Header</h4>
-          <p class="flex-1 text-justify">Eum voluptates unde quo illum corrupti eos minima consequuntur. Aut totam dolor cum voluptates minus non accusantium molestias est similique eius quo quisquam tenetur!</p>
+          <p class="flex-1">Eum voluptates unde quo illum corrupti eos minima consequuntur. Aut totam dolor cum voluptates minus non accusantium molestias est similique eius quo quisquam tenetur!</p>
         </div>
       </div>
       <div class="flex-1 flex gap-8 mb-16">
@@ -24,7 +24,7 @@
         </div>
         <div class="flex-1">
           <h4>Subtitle Header</h4>
-          <p class="flex-1 text-justify">Lorem ipsum dolor sit amet. Animi adipisci et corporis animi qui earum aliquid eum unde blanditiis qui nisi ducimus est laudantium sequi. Est fugiat repudiandae ab voluptatem eveniet non nesciunt consequatur.</p>
+          <p class="flex-1">Lorem ipsum dolor sit amet. Animi adipisci et corporis animi qui earum aliquid eum unde blanditiis qui nisi ducimus est laudantium sequi. Est fugiat repudiandae ab voluptatem eveniet non nesciunt consequatur.</p>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@
         </div>
         <div class="flex-1">
           <h4>Subtitle Header</h4>
-          <p class="flex-1 text-justify">Lorem ipsum dolor sit amet. Animi adipisci et corporis animi qui earum aliquid eum unde blanditiis qui nisi ducimus est laudantium sequi. Est fugiat repudiandae ab voluptatem eveniet non nesciunt consequatur.</p>
+          <p class="flex-1">Lorem ipsum dolor sit amet. Animi adipisci et corporis animi qui earum aliquid eum unde blanditiis qui nisi ducimus est laudantium sequi. Est fugiat repudiandae ab voluptatem eveniet non nesciunt consequatur.</p>
         </div>
       </div>
       <div class="flex-1 flex gap-8 mb-16">
@@ -45,7 +45,7 @@
         </div>
         <div class="flex-1">
           <h4>Subtitle Header</h4>
-          <p class="flex-1 text-justify">Lorem ipsum dolor sit amet. Eos quibusdam numquam non ducimus dolorem qui optio aliquam qui consequuntur omnis.</p>
+          <p class="flex-1">Lorem ipsum dolor sit amet. Eos quibusdam numquam non ducimus dolorem qui optio aliquam qui consequuntur omnis.</p>
         </div>
       </div>
     </div>
@@ -53,6 +53,39 @@
   </div>
 </section>
 
-<section class="py-16">
+<section style="position: relative">
+  <div class="parallax"></div>
+  <div class="img-overlay">
+    <div class="lg:container lg:mx-auto lg:py-48 sm:py-24 text-white sm:px-6">
+      <div class="lg:w-4/5">
+        <h2>About Us</h2>
+        <h4>Et voluptatem ipsa nam beatae voluptatem ea voluptatibus dolor. Cum dolorem culpa eos adipisci sint eos quae praesentium qui necessitatibus doloremque aut quia eveniet rem galisum ipsum.</h4>
+        <p>Lorem ipsum dolor sit amet. Et mollitia adipisci sed architecto laudantium est fugiat nobis qui voluptas nulla ut error praesentium qui dolorem aperiam. Hic soluta tempora ut maxime dicta sed voluptate minima aut dolores ullam qui esse eius et illum dolores. Aut excepturi dignissimos sed nesciunt incidunt ut doloremque architecto non repudiandae Quis. Et eligendi voluptatem sed minus officia qui quia ducimus et accusantium odit.</p> 
+        <button type="button" class="primary-button large-button mt-8">READ MORE ABOUT US</button>
+      </div>
+    </div>
+  </div>
 
+</section>
+
+<section class="bg-primary text-white py-16">
+  <div class="lg:container lg:mx-auto sm:px-6">
+    <div class="lg:w-4/5">
+      <h2>Our Projects</h2>
+      <h4>At illum accusamus aut consequuntur sint ut dolorem sint qui consectetur voluptatum? Ut accusantium minima vel nihil voluptas est architecto ducimus aut reprehenderit odio. Quo enim voluptatem ut soluta recusandae in quas dolores.</h4>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="grid grid-cols-3 gap-0">
+    <div class="gallery-img" *ngFor="let img of images" [ngStyle]="{'background-image': 'url('+ img.img +')'}">
+      <div class="gallery-overlay text-white">
+        <div class="content">
+          <i class="fa-solid fa-magnifying-glass-plus text-3xl"></i>
+          <h4>{{img.header}}</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
