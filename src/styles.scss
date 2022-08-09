@@ -2,4 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-svg { display: inline;}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Raleway:ital,wght@0,600;1,500;1,600&display=swap');
+
+body {
+    background-image: url('assets/images/shane-mclendon-EN1tF2EG-50-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #333;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: calc(1rem * 3.5);
+    
+}
+h2 {
+    font-size: calc(1rem * 3);
+}
+h3 {
+    font-size: calc(1rem * 1.8);
+    font-style: italic;
+    font-weight: 500;
+}
+h4 {
+    font-size: calc(1rem * 1.5);
+}
+
+.large-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+}
+
+.small-button {
+    padding: 3px 5px;
+}
+
+.primary-button {
+    background-color: #8B0D32;
+    color: white;
+}
+
+.primary-button-open-white {
+    background-color: transparent;
+    border: solid 3px #8B0D32;
+    color: white;
+    &:hover {
+        background-color: #8B0D32;
+        font-weight: 600;
+    }
+}
+
+.primary-button-open {
+    background-color: transparent;
+    border: solid 3px #8B0D32;
+}
+

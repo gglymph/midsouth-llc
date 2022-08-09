@@ -1,0 +1,28 @@
+.main-img {
+    background-image: url('../../assets/images/troy-mortier-eKY6_9W_iqY-unsplash.jpg');
+    height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: relative;
+    .img-overlay {
+        position: absolute;
+        background-color: rgba($color: #000000, $alpha: .70);
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.icons {
+    width: 180px;
+    height: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    margin-bottom: 24px;
+}
+
+
