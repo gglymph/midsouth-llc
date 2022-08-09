@@ -126,29 +126,29 @@
 
       <div class="mt-8 lg:w-[650px]">
         <h2>Send Us A Message</h2>
-        <form>
+        <form action="https://formspree.io/f/mrgdgbzw" method="POST">
           <div class="mb-6">
             <label for="txtFullName" class="font-semibold">Full Name</label>
-            <input id="txtFullName" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+            <input id="txtFullName" name="name" type="text" required class="bg-neutral-700 py-2 px-4 mt-2">
           </div>
           <div class="mb-6">
             <label for="txtEmail" class="font-semibold">E-mail</label>
-            <input id="txtEmail" type="text" class="bg-neutral-700 py-2 mt-2">
+            <input id="txtEmail" name="email" type="email" required class="bg-neutral-700 py-2 px-4 mt-2">
           </div>
           <div class="mb-6">
             <label for="txtCompany" class="font-semibold">Company</label>
-            <input id="txtCompany" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+            <input id="txtCompany" name="company" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
           </div>
           <div class="mb-6">
             <label for="txtSubject" class="font-semibold">Subject</label>
-            <input id="txtSubject" type="text" class="bg-neutral-700 py-2 px-4 mt-2">
+            <input id="txtSubject" name="subject" required type="text" class="bg-neutral-700 py-2 px-4 mt-2">
           </div>
           <div class="mb-6">
             <label for="txtMessage" class="font-semibold">Message</label>
-            <textarea id="txtMessage" type="text" class="bg-neutral-700 py-2 px-4 mt-2 w-full h-[150px]"></textarea>
+            <textarea id="txtMessage" name="message" type="text" required class="bg-neutral-700 py-2 px-4 mt-2 w-full h-[150px]"></textarea>
           </div>
           <div class="mb-6 text-right">
-            <button class="primary-button large-button">SEND MESSAGE</button>
+            <button type="submit" class="primary-button large-button">SEND MESSAGE</button>
           </div>
         </form>
       </div>
