@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private el: ElementRef) { }
 
   ngOnInit() {
+  }
+
+  scrollTo(anchor: string) {
+    const el = document.getElementById(anchor);
+    el?.scrollIntoView({behavior: 'smooth'});
   }
 
 }

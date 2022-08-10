@@ -6,7 +6,7 @@
   </div>
 </section>
 
-<section class="bg-white pt-16">
+<section id="services" class="bg-white pt-16">
   <div class="lg:container lg:mx-auto sm:px-6">
     <div class="lg:columns-2 sm:columns-1">
       <div class="flex-1 flex gap-8 mb-16">
@@ -53,7 +53,7 @@
   </div>
 </section>
 
-<section style="position: relative">
+<section id="about" style="position: relative">
   <div class="parallax"></div>
   <div class="img-overlay">
     <div class="lg:container lg:mx-auto lg:py-48 sm:py-12 text-white sm:px-6">
@@ -68,7 +68,7 @@
 
 </section>
 
-<section class="bg-primary text-white py-16">
+<section id="projects" class="bg-primary text-white py-16">
   <div class="lg:container lg:mx-auto sm:px-6">
     <div class="lg:w-4/5">
       <h2>Our Projects</h2>
@@ -77,7 +77,7 @@
   </div>
 </section>
 
-<section>
+<section id="projects">
   <div class="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-0">
     <div class="gallery-img" *ngFor="let img of images; index as i" [ngStyle]="{'background-image': 'url('+ img.img +')'}">
       <div class="gallery-overlay text-white" (click)="openGallery(i)">
@@ -93,7 +93,7 @@
 
 </section>
 
-<section class="bg-neutral-800 text-white py-8">
+<section id="contact" class="bg-neutral-800 text-white py-8">
   
   <div class="lg:container sm:px-6 lg:px-96">
     
@@ -116,7 +116,7 @@
           <div class="mr-4">
             <i class="fa-solid fa-envelope text-primary"></i>
           </div>
-          <a href="tel:+18643169871">email@email.com</a>
+          <a href="tel:+18643169871">midsouthsc@yahoo.com</a>
         </div>
         <div class="sm:hidden lg:block">
           <img src="https://maps.googleapis.com/maps/api/staticmap?center=4580 Jordan Rd, Greer, SC 29651

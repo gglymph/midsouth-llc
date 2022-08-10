@@ -4,10 +4,10 @@
     <div class="flex items-center">
       <img class="lg:w-60 lg:-ml-3.5 sm:ml-0 sm:w-36" style="margin-left: -13px" src="assets/logos/logo_transparent_background.png" />
       <nav class="sm:hidden flex-1 lg:flex gap-32 text-primary md:ml-96 text-lg font-semibold">
-        <a href="javascript:void(0)">About</a>
-        <a href="javascript:void(0)">Services</a>
-        <a href="javascript:void(0)">Projects</a>
-        <a href="javascript:void(0)">Contact Us</a>
+        <a href="javascript:void(0)" (click)="scrollTo('about')">About</a>
+        <a href="javascript:void(0)" (click)="scrollTo('services')">Services</a>
+        <a href="javascript:void(0)" (click)="scrollTo('projects')">Projects</a>
+        <a href="javascript:void(0)" (click)="scrollTo('contact')">Contact Us</a>
         <a href="javascript:void(0)">Blogs</a>
       </nav>
       <div class="flex-1 sm:visible lg:hidden text-right">

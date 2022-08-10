@@ -1,11 +1,13 @@
-<div class="w-full" style="position: fixed; z-index: 1">
+<div class="w-full">
     <app-header></app-header>
     <app-menu></app-menu>
 </div>
-<div class="sm:pt-[56px] lg:pt-[93px]">
+<div class="">
     <app-main-content></app-main-content>
 </div>
 <div class="text-center p-6 bg-neutral-900 text-white">
     Copyright &copy; 2022 Midsouth LLC<br />
     Designed by gglymph@gmail.com
 </div>
+
+<a href="javascript:void(0)" (click)="scrollToTop()" class="float-to-top"><i class="fa-solid fa-circle-arrow-up"></i></a>
