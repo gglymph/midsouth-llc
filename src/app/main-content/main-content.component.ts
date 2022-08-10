@@ -42,6 +42,11 @@ export class MainContentComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollTo(anchor: string) {
+    const el = document.getElementById(anchor);
+    el?.scrollIntoView({behavior: 'smooth'});
+  }
+
   openGallery(index: number) {
     this.currentIndex = index;
     this.showGallery = true;
