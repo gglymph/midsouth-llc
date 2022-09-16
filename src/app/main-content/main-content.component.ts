@@ -31,6 +31,30 @@ export class MainContentComponent implements OnInit {
       {
         header: 'PROJECT 6',
         img: 'assets/gallery/IMG_8858.jpg'
+      },
+      {
+        header: 'PROJECT 7',
+        img: 'assets/gallery/IMG_1252.jpg'
+      },
+      {
+        header: 'PROJECT 8',
+        img: 'assets/gallery/IMG_1263.jpg'
+      },
+      {
+        header: 'PROJECT 9',
+        img: 'assets/gallery/IMG_1265.jpg'
+      },
+      {
+        header: 'PROJECT 11',
+        img: 'assets/gallery/IMG_1576.jpg'
+      },
+      {
+        header: 'PROJECT 12',
+        img: 'assets/gallery/IMG_1593.jpg'
+      },
+      {
+        header: 'PROJECT 13',
+        img: 'assets/gallery/IMG_1609.jpg'
       }
   ]
 
